@@ -12,7 +12,7 @@ const App = () => {
   });
   },[]);
   return (
-    <div className="bg-[#111827] min-h-screen">
+    <div className="bg-[#b00c6c] min-h-screen">
      <Header />
     </div>
   )
