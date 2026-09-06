@@ -1,15 +1,16 @@
 import React,{ useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
+
 const Header = () => {
     const [isMenuOpen,setIsMenuOpen] = useState(false);
 
     const menuItems = [
         {name:'Education',href:'#education'},
-        {name:'Certificates',href:'#Certificates'},
-        {name:'About Me',href:'#About'},
-        {name:'Skills',href:'#Skills'},
-        {name:'Projects',href:'#Projects'}
+        {name:'Certificates',href:'#certificates'},
+        {name:'About Me',href:'#about'},
+        {name:'Skills',href:'#skills'},
+        {name:'Projects',href:'#projects'}
 
     ]
 
@@ -21,10 +22,13 @@ const Header = () => {
     }
 
   return (
-    <header className='relative z-50 px-6 py-7'>
+    <header className='fixed top-0 w-full z-50 px-6 py-2 bg-[#b00c6c] shadow-lg'>
         <div className='max-w-7xl mx-auto flex justify-between items-center'>
+
             {/*Logo*/}
-            <div className='text-white text-3xl font-black cursor-pointer'>
+            <div  className='text-white text-3xl font-black cursor-pointer' 
+            onClick={() => scrollToSection('#herosection')}
+>
                 Portfolio <span className='text-primary'>.</span>
             </div>
             

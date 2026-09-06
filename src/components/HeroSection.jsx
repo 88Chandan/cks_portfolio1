@@ -3,7 +3,8 @@ import hero from '../assets/dora.png'
 
 const HeroSection = () => {
   return (
-    <section className='relative w-full' data-aos='zoom-in-up'>
+    <section id="herosection"
+    className='relative w-full' data-aos='zoom-in-up'>
         <div className='absolute top-0 inset-x-0 h-64 flex items-start'>
             <div className='h-24 w-2/3 bg-linear-to-br from-[#dfbdfa] blur-2xl
             invisible opacity-40'></div>
@@ -50,11 +51,12 @@ const HeroSection = () => {
                             <div className=' hover:scale-105 transition-all ease-in-out flex 
                             justify-center items-center relative'>
                                 <div className='svg-container'>
-                                    <Download size={18}
-                                    className=' text-fuchsia-200' />
-                                    <div className='download-;oader text-white hidden'></div>
+                                    <Download className=' text-fuchsia-200' size={18}/>
+                                    <div className='download-loader
+                                    text-white hidden'></div>
                                 </div>
-                                <a href="" download="" className='pl-2 text-fuchsia-200'> Download resume</a>
+                                <a href=" " download=" " className='pl-2
+                                 text-fuchsia-200'> Download resume</a>
                             </div>
                          </button>
 
