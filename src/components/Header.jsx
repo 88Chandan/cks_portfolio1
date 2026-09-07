@@ -8,7 +8,7 @@ const Header = () => {
     const menuItems = [
         {name:'Education',href:'#education'},
         {name:'Certificates',href:'#certificates'},
-        {name:'About Me',href:'#about'},
+        {name:'AboutSection',href:'#about'},
         {name:'Skills',href:'#skills'},
         {name:'Projects',href:'#projects'}
 

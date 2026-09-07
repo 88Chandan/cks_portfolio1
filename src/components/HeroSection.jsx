@@ -4,7 +4,7 @@ import hero from '../assets/dora.png'
 const HeroSection = () => {
   return (
     <section id="herosection"
-    className='relative w-full' data-aos='zoom-in-up'>
+    className='relative w-full h-100vh' data-aos='zoom-in-up'>
         <div className='absolute top-0 inset-x-0 h-64 flex items-start'>
             <div className='h-24 w-2/3 bg-linear-to-br from-[#dfbdfa] blur-2xl
             invisible opacity-40'></div>
@@ -18,8 +18,8 @@ const HeroSection = () => {
             relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto'>
                 <div className='lg:py-6'>
                     <div className='text-center lg:text-left'>
-                        <h1 className='pt-4 text-white font-bold text-4xl md:text-5xl
-                         lg:text-6xl '>
+                        <h1 className='pt-9 text-white font-bold text-4xl md:text-5xl
+                         lg:text-6xl'>
                             Hi, I'm{' '}
                             <span className='text-transparent bg-clip-text bg-linear-to-r
                             from-primary to-cyan-100'>

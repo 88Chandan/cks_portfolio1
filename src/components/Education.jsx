@@ -25,13 +25,14 @@ const Education = () => {
     <section id='education'
         className='text-white py-20 overflow-hidden' >
         <div className=' max-w-7xl mx-auto px-6 lg:px-16'>
-            <div className='mb-16'>
+            <div className='mb-16' >
+                
                 <p className='text-fuchsia-300 text-sm uppercase tracking-widest
                  mb-2 font-semibold'
                 >Learning Path</p>
 
                 <h2 className='text-4xl md:text-5xl font-extrabold
-                 text-fuchsia-200'> Education.</h2>
+                 text-fuchsia-200' data-aos='fade-right' > Education.</h2>
             </div>
 
                {/* <--------- image ---------------> */}
@@ -102,6 +103,7 @@ const Education = () => {
 
                 </div>
             </div>
+        
         </div>
 
     </section>
