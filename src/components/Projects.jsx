@@ -1,26 +1,73 @@
 import React from 'react'
-
+import proj1 from '../assets/dora.png'
+import proj2 from '../assets/doraread.png'
 const Projects = () => {
     const projects = [
         {
             id:1,
             image:proj1,
             title:' portfolio',
-            dec:'collection of academic,skills, learning journey ',
-            tech:['React','Tailwind-css']
+            desc:'collection of academic,skills, learning journey ',
+            tech:['React','Tailwind-css'],
+            link:''
         },
               {
             id:2,
             image:proj2,
             title:'RIFD Card Attendance',
-            dec:'collection of attendance by scanning rfid card',
-            tech:['Esp32','C++ programming','Google Spreadsheet']
+            desc:'collection of attendance by scanning rfid card',
+            tech:['Esp32','C++ programming','Google Spreadsheet'],
+            link:''
         },
     ]
   return (
-    <div>
-      
-    </div>
+    <section id='projects' 
+    className=' py-16 bg- '>
+      <div className=' container mx-auto px-4 max-w-7xl'>
+        <div className='text-center mb-10'>
+          <h2 className=' text-4xl md:text-5xl font-extrabold text-white'>
+            Projects. </h2>
+            <div className=' w-28 h-1 bg-primary mx-auto mt-2 rounded-full'>              
+            </div>
+          </div>
+            <div className=' grid grid-cols-1 md:grid-cols-3 gap-5'>
+              {
+                projects.map((project)=>(
+                 <div key={project.id}
+                 className='bg-pink-900 rounded-lg overflow-hidden
+                  shadow-sm hover:shadow-lg hover:scale-105
+                  transition-all duration-300'>
+                    <img src={project.image} alt={project.title}
+                     className='w-full h-44 object-cover hover:opacity-90
+                      transition-opacity duration-300' />
+                      <div className=' p-4'>
+                        <h3 className=' text-lg font-semibold text-white
+                         group-hover:text-primary transition-colors'>
+                          {project.title}
+                        </h3>
+                        <p className='text-indigo-950 text-sm mt-1'>
+                          {project.desc}
+                        </p>
+
+                        <div className='flex flex-wrap gap-1.5 mt-3'>
+                          {project.tech.map((tec,idx)=>(
+                            <span key={idx}
+                            className=' text-xs px-2 py-0.5
+                            bg-gray-700 text-gray-300 rounded
+                             hover:bg-primary hover:text-white transition-colors duration-300'>
+                              {tec}
+                            </span>
+                          ))}
+                        </div>
+                    </div>               
+                 </div>
+                ))}
+
+            </div>     
+      </div>
+
+    </section>
+    
   )
 }
 
